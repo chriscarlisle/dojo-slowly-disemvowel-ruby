@@ -1,18 +1,18 @@
+VOWEL = /[aeiou]/i
+
 def slowly_disemvowel(string)
-  return [string] unless contains_a_vowel(string)
+  string = remove_vowel(string)
 
-  strings = []
+  return [string] unless contains_vowel(string)
 
-  while contains_a_vowel(string) do
-    string = string.sub(/[aeiou]/i, '')
-    strings << string
-  end
-
-  strings
-
+  [string, *slowly_disemvowel(string)]
 end
 
-
-def contains_a_vowel(string)
-  return string =~ /[aeiou]/i
+def remove_vowel(string)
+  string.sub(VOWEL, '')
 end
+
+def contains_vowel(string)
+  string.match?(VOWEL)
+end
+
