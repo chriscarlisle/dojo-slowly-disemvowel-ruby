@@ -1,5 +1,6 @@
 # Dojo Excercise
 ![Minitest Status](https://github.com/chriscarlisle/dojo-slowly-disemvowel-ruby/actions/workflows/minitests.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Task
 For any given word, return a list of strings where one vowel has been removed at a time.
