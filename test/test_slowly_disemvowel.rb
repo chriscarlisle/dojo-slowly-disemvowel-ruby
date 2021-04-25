@@ -10,4 +10,8 @@ class TestSlowlyDisemvowel < Minitest::Test
   def test_it_returns_an_already_disemvowelled_string
     assert_equal ["Mntst"], slowly_disemvowel("Mntst")
   end
+
+  def test_it_returns_an_empty_string
+    assert_equal [""], slowly_disemvowel("A")
+  end
 end
